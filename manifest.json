@@ -1,0 +1,27 @@
+{
+	"name": "Meet Auto",
+	"description": "Automatically admits people to the Meet who are using the link to join it",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"minimum_chrome_version": "68",
+	"permissions": [
+		"https://meet.google.com/*"
+	],
+	"icons": {
+		"16": "images/meet_auto16.png",
+		"32": "images/meet_auto32.png",
+		"48": "images/meet_auto48.png",
+		"128": "images/meet_auto128.png"
+	},
+	"content_scripts": [
+		{
+			"run_at": "document_start",
+			"matches": [
+				"https://meet.google.com/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
