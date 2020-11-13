@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		{	
 	
 			// Better approach just to grab one element using querySelector
-			let dialogBoxElement = document.querySelector('div[aria-label="Someone wants to join this meeting"][role="dialog"]')
+			let dialogBoxElement = document.querySelector('div[role="dialog"]');
 
-			let imageElements = dialogBoxElement.querySelectorAll('img')
+			let imageElements = dialogBoxElement.querySelectorAll('img');
 
 			let userImg, userName;
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			});
 
-			userName = userImg.parentElement.textContent;
+			userName = userImg.title;
 	
 			let myNode = p[0];
 			while(myNode)

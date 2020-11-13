@@ -1,6 +1,6 @@
 {
 	"name": "Meet Auto",
-	"description": "Automatically admits people to the Meet who are using the link to join it",
+	"description": "Automatically admit people to the Google Meet from outside the organization",
 	"version": "0.0.1",
 	"manifest_version": 2,
 	"minimum_chrome_version": "68",
