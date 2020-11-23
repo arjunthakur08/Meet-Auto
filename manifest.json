@@ -5,8 +5,7 @@
 	"manifest_version": 2,
 	"minimum_chrome_version": "68",
 	"permissions": [
-		"https://meet.google.com/*",
-		"storage"
+		"https://meet.google.com/*"
 	],
 	"icons": {
 		"16": "images/meet_auto16.png",
